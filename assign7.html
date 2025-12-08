@@ -1,0 +1,60 @@
+ <!DOCTYPE html>
+<html>
+<head>
+    <title>Navigation Menu using Block, Inline, Inline-Block, Float & Clear</title>
+   <style>
+        nav {
+            display: block;        
+            background-color: #222;
+            padding: 10px 0;
+        }
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline-block;   
+            float: left;             
+            margin: 0 15px;
+        }
+        nav ul li a {
+            display: inline;         
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 6px 10px;
+        }
+        nav ul li a:hover {
+            background-color: brown;
+            border-radius: 4px;
+        }
+        .clear {
+            clear: both;           
+        }
+        .content {
+            padding: 30px;
+            font-family: Arial;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Academics</a></li>
+            <li><a href="#">Admissions</a></li>
+            <li><a href="#">Placements</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+        <div class="clear"></div> 
+    </nav>
+    <div class="content">
+        <h2>Navigation Menu Using CSS Display & Float Properties</h2>
+    </div>
+</body>
+</html> 
+  
+  

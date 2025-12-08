@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 30px;
+}
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+.card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    padding: 16px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+.card img {
+ width: 100%;
+    height: auto; 
+    border-radius: 6px;
+    margin-bottom: 10px;
+}
+.card h3 {
+    font-size: 18px;
+    margin: 5px 0;
+}
+.card p {
+    font-size: 14px;
+    color: #555;
+    margin: 5px 0;
+}
+.price {
+    font-weight: bold;
+    color: #007bff;
+    font-size: 18px;
+    margin-top: 10px;
+}
+.card a {
+    text-decoration: none;
+    color: inherit; 
+}
+@media (max-width: 1024px) {
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (max-width: 600px) {
+    .grid {
+ grid-template-columns: 1fr;
+    }
+}
+    </style>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Grid Example</title>
+    <link rel="stylesheet" href="style9.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 30px;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Our Featured Products</h1>
+   <div class="grid">
+        <div class="card">
+            <a href="#">
+                <img src="https://assets.myntassets.com/h_200,w_200,c_fill,g_auto/h_1440,q_100,w_1080/v1/assets/images/13623410/2021/8/12/40a5d1ec-ce15-414e-9dd1-2bd5bfa62fcc1628763753961-Roadster-Men-Olive-Green-Brand-Logo-Printed-T-shirt-51816287-1.jpg" alt="Product 1">
+<h3>Product 1</h3>
+            </a>
+            <p>High quality item with great features.</p>
+            <div class="price">₹1,999</div>
+        </div>
+        <div class="card">
+            <a href="#">
+                <img src="https://i.pinimg.com/originals/d7/30/a2/d730a2b8e35a6fa8c0e49a17d183e845.jpg" alt="Product 2">
+                <h3>Product 2</h3>
+            </a>
+            <p>Durable and stylish for daily use.</p>
+            <div class="price">₹2,999</div>
+        </div>
+        <div class="card">
+            <a href="#">
+                <img src="https://assets.myntassets.com/h_200,w_200,c_fill,g_auto/h_1440,q_100,w_1080/v1/assets/images/2215210/2018/1/22/11516616541193-Roadster-Men-Beige-Colourblocked-Round-Neck-T-shirt-8181516616541016-1.jpg" alt="Product 3">
+                <h3>Product 3</h3>
+            </a>
+            <p>Soft, premium, and comfortable.</p>
+            <div class="price">₹1,099</div>
+        </div>
+        <div class="card">
+            <a href="#">
+ <img src="https://assets.myntassets.com/h_200,w_200,c_fill,g_auto/h_1440,q_100,w_1080/v1/assets/images/6720276/2019/1/28/93c7e6aa-9a28-4b06-a5b9-1d4d5f877cab1548674473260-Roadster-Men-Black-Printed-Round-Neck-T-shirt-59515486744717-1.jpg" alt="Product 4">
+                <h3>Product 4</h3>
+            </a>
+            <p>Sleek design with premium quality.</p>
+            <div class="price">₹1,599</div>
+        </div>
+    </div>
+</body>
+</html>
